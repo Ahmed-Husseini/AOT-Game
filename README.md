@@ -26,7 +26,6 @@ Set in an alternate *Attack on Titan* universe, the game revolves around defendi
 ## 🗂️ Project Structure
 
 ```plaintext
-└── Game
 ├── bin
 │   └── game
 │       ├── engine
