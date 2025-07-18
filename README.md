@@ -25,7 +25,46 @@ Set in an alternate *Attack on Titan* universe, the game revolves around defendi
 
 ## 🗂️ Project Structure
 
-<pre><code>```plaintext AOT-Game/ ├── game/ │ ├── engine/ │ │ ├── base/ # Wall class │ │ ├── dataloader/ # CSV readers for weapons and titans │ │ ├── exceptions/ # Custom game exceptions │ │ ├── interfaces/ # OOP interfaces: Attackee, Attacker, Mobil │ │ ├── lanes/ # Lane class: holds titans and weapons │ │ ├── titans/ # Titan class hierarchy + Titan registry │ │ ├── weapons/ # Weapon class hierarchy + Weapon registry │ │ └── weapons/factory/ # Factory & response wrapper for weapons │ ├── gui/ # JavaFX GUI implementation │ └── tests/ # Unit testing and test scenarios └── resources/ ├── titans.csv # CSV for titan stats └── weapons.csv # CSV for weapon stats ```</code></pre>
+AOT-Game/
+├── game/
+│   ├── engine/
+│   │   ├── base/                     # Wall class (e.g., Wall.java)
+│   │   ├── dataloader/              # Loads data from CSV files (e.g., DataLoader.java)
+│   │   ├── exceptions/              # Game-specific exceptions
+│   │   │   ├── GameActionException.java
+│   │   │   ├── InvalidLaneException.java
+│   │   │   └── InsufficientResourcesException.java
+│   │   ├── interfaces/              # Game behavior interfaces
+│   │   │   ├── Attackee.java
+│   │   │   ├── Attacker.java
+│   │   │   └── Mobil.java
+│   │   ├── lanes/                   # Lane logic and comparison
+│   │   │   └── Lane.java
+│   │   ├── titans/                  # Titan hierarchy and registry
+│   │   │   ├── Titan.java
+│   │   │   ├── PureTitan.java
+│   │   │   ├── AbnormalTitan.java
+│   │   │   ├── ArmoredTitan.java
+│   │   │   ├── ColossalTitan.java
+│   │   │   └── TitanRegistry.java
+│   │   ├── weapons/                 # Weapon hierarchy and registry
+│   │   │   ├── Weapon.java
+│   │   │   ├── PiercingCannon.java
+│   │   │   ├── SniperCannon.java
+│   │   │   ├── VolleySpreadCannon.java
+│   │   │   ├── WallTrap.java
+│   │   │   ├── WeaponRegistry.java
+│   │   │   └── factory/
+│   │   │       ├── WeaponFactory.java
+│   │   │       └── FactoryResponse.java
+│   ├── gui/                         # JavaFX GUI (controllers, scenes, and components)
+│   │   └── (JavaFX classes go here)
+│   └── tests/                       # Unit and scenario-based test classes
+│       └── (JUnit test classes go here)
+├── resources/                       # Game data
+│   ├── titans.csv
+│   └── weapons.csv
+└── README.md                        # Project documentation
 
 ---
 
