@@ -25,8 +25,27 @@ Set in an alternate *Attack on Titan* universe, the game revolves around defendi
 
 ## 🗂️ Project Structure
 
-<pre><code>```plaintext AOT-Game/ ├── game/ │ ├── engine/ │ │ ├── base/ # Wall class (e.g., Wall.java) │ │ ├── dataloader/ # Loads data from CSV files │ │ ├── exceptions/ # Custom game exceptions │ │ │ ├── GameActionException.java │ │ │ ├── InvalidLaneException.java │ │ │ └── InsufficientResourcesException.java │ │ ├── interfaces/ # Interfaces (Attackee, Attacker, Mobil) │ │ ├── lanes/ # Lane management │ │ ├── titans/ # Titan hierarchy & registry │ │ ├── weapons/ # Weapon hierarchy & registry │ │ │ └── factory/ # Weapon factory and response classes │ ├── gui/ # JavaFX GUI │ └── tests/ # Unit and scenario-based tests ├── resources/ # CSV data files │ ├── titans.csv │ └── weapons.csv └── README.md # Project documentation ```</code></pre>
----
+```plaintext
+AOT-Game/
+├── game/
+│   ├── engine/
+│   │   ├── base/                     # Wall class (e.g., Wall.java)
+│   │   ├── dataloader/              # Loads data from CSV files
+│   │   ├── exceptions/              # Custom game exceptions
+│   │   │   ├── GameActionException.java
+│   │   │   ├── InvalidLaneException.java
+│   │   │   └── InsufficientResourcesException.java
+│   │   ├── interfaces/             # Interfaces (Attackee, Attacker, Mobil)
+│   │   ├── lanes/                  # Lane management
+│   │   ├── titans/                 # Titan hierarchy & registry
+│   │   ├── weapons/                # Weapon hierarchy & registry
+│   │   │   └── factory/            # Weapon factory and response classes
+│   ├── gui/                        # JavaFX GUI
+│   └── tests/                      # Unit and scenario-based tests
+├── resources/                      # CSV data files
+│   ├── titans.csv
+│   └── weapons.csv
+└── README.md                       # Project documentation
 
 ## ⚙️ Core OOP Design
 
