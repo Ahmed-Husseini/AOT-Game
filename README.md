@@ -26,26 +26,89 @@ Set in an alternate *Attack on Titan* universe, the game revolves around defendi
 ## 🗂️ Project Structure
 
 ```plaintext
-AOT-Game/
-├── game/
-│   ├── engine/
-│   │   ├── base/                     # Wall class (e.g., Wall.java)
-│   │   ├── dataloader/              # Loads data from CSV files
-│   │   ├── exceptions/              # Custom game exceptions
-│   │   │   ├── GameActionException.java
-│   │   │   ├── InvalidLaneException.java
-│   │   │   └── InsufficientResourcesException.java
-│   │   ├── interfaces/             # Interfaces (Attackee, Attacker, Mobil)
-│   │   ├── lanes/                  # Lane management
-│   │   ├── titans/                 # Titan hierarchy & registry
-│   │   ├── weapons/                # Weapon hierarchy & registry
-│   │   │   └── factory/            # Weapon factory and response classes
-│   ├── gui/                        # JavaFX GUI
-│   └── tests/                      # Unit and scenario-based tests
-├── resources/                      # CSV data files
-│   ├── titans.csv
-│   └── weapons.csv
-└── README.md                       # Project documentation
+└── Game
+├── bin
+│   └── game
+│       ├── engine
+│       │   ├── Battle.class
+│       │   ├── BattlePhase.class
+│       │   ├── base
+│       │   │   └── Wall.class
+│       │   ├── dataloader
+│       │   │   └── DataLoader.class
+│       │   ├── exceptions
+│       │   │   ├── GameActionException.class
+│       │   │   ├── InsufficientResourcesException.class
+│       │   │   ├── InvalidCSVFormat.class
+│       │   │   └── InvalidLaneException.class
+│       │   ├── interfaces
+│       │   │   ├── Attackee.class
+│       │   │   ├── Attacker.class
+│       │   │   └── Mobil.class
+│       │   ├── lanes
+│       │   │   └── Lane.class
+│       │   ├── titans
+│       │   │   ├── AbnormalTitan.class
+│       │   │   ├── ArmoredTitan.class
+│       │   │   ├── ColossalTitan.class
+│       │   │   ├── PureTitan.class
+│       │   │   ├── Titan.class
+│       │   │   └── TitanRegistry.class
+│       │   └── weapons
+│       │       ├── PiercingCannon.class
+│       │       ├── SniperCannon.class
+│       │       ├── VolleySpreadCannon.class
+│       │       ├── WallTrap.class
+│       │       ├── Weapon.class
+│       │       ├── WeaponRegistry.class
+│       │       └── factory
+│       │           ├── FactoryResponse.class
+│       │           └── WeaponFactory.class
+│       ├── gui
+│       └── tests
+│           └── Milestone1PublicTests.class
+├── src
+│   └── game
+│       ├── engine
+│       │   ├── Battle.java
+│       │   ├── BattlePhase.java
+│       │   ├── base
+│       │   │   └── Wall.java
+│       │   ├── dataloader
+│       │   │   └── DataLoader.java
+│       │   ├── exceptions
+│       │   │   ├── GameActionException.java
+│       │   │   ├── InsufficientResourcesException.java
+│       │   │   ├── InvalidCSVFormat.java
+│       │   │   └── InvalidLaneException.java
+│       │   ├── interfaces
+│       │   │   ├── Attackee.java
+│       │   │   ├── Attacker.java
+│       │   │   └── Mobil.java
+│       │   ├── lanes
+│       │   │   └── Lane.java
+│       │   ├── titans
+│       │   │   ├── AbnormalTitan.java
+│       │   │   ├── ArmoredTitan.java
+│       │   │   ├── ColossalTitan.java
+│       │   │   ├── PureTitan.java
+│       │   │   ├── Titan.java
+│       │   │   └── TitanRegistry.java
+│       │   └── weapons
+│       │       ├── PiercingCannon.java
+│       │       ├── SniperCannon.java
+│       │       ├── VolleySpreadCannon.java
+│       │       ├── WallTrap.java
+│       │       ├── Weapon.java
+│       │       ├── WeaponRegistry.java
+│       │       └── factory
+│       │           ├── FactoryResponse.java
+│       │           └── WeaponFactory.java
+│       ├── gui
+│       └── tests
+│           └── Milestone1PublicTests.java
+├── titans.csv
+└── weapons.csv
 ```
 
 ---
