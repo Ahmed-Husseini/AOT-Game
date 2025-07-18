@@ -174,4 +174,4 @@ Tests ensure:
 ## 👥 Contributors
 
 - **Ahmed Husseini**
-– **Mohamed Yaser**
+- **Mohamed Yaser**
