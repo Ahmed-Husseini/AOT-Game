@@ -25,47 +25,7 @@ Set in an alternate *Attack on Titan* universe, the game revolves around defendi
 
 ## 🗂️ Project Structure
 
-AOT-Game/
-├── game/
-│   ├── engine/
-│   │   ├── base/                     # Wall class (e.g., Wall.java)
-│   │   ├── dataloader/              # Loads data from CSV files (e.g., DataLoader.java)
-│   │   ├── exceptions/              # Game-specific exceptions
-│   │   │   ├── GameActionException.java
-│   │   │   ├── InvalidLaneException.java
-│   │   │   └── InsufficientResourcesException.java
-│   │   ├── interfaces/              # Game behavior interfaces
-│   │   │   ├── Attackee.java
-│   │   │   ├── Attacker.java
-│   │   │   └── Mobil.java
-│   │   ├── lanes/                   # Lane logic and comparison
-│   │   │   └── Lane.java
-│   │   ├── titans/                  # Titan hierarchy and registry
-│   │   │   ├── Titan.java
-│   │   │   ├── PureTitan.java
-│   │   │   ├── AbnormalTitan.java
-│   │   │   ├── ArmoredTitan.java
-│   │   │   ├── ColossalTitan.java
-│   │   │   └── TitanRegistry.java
-│   │   ├── weapons/                 # Weapon hierarchy and registry
-│   │   │   ├── Weapon.java
-│   │   │   ├── PiercingCannon.java
-│   │   │   ├── SniperCannon.java
-│   │   │   ├── VolleySpreadCannon.java
-│   │   │   ├── WallTrap.java
-│   │   │   ├── WeaponRegistry.java
-│   │   │   └── factory/
-│   │   │       ├── WeaponFactory.java
-│   │   │       └── FactoryResponse.java
-│   ├── gui/                         # JavaFX GUI (controllers, scenes, and components)
-│   │   └── (JavaFX classes go here)
-│   └── tests/                       # Unit and scenario-based test classes
-│       └── (JUnit test classes go here)
-├── resources/                       # Game data
-│   ├── titans.csv
-│   └── weapons.csv
-└── README.md                        # Project documentation
-
+<pre><code>```plaintext AOT-Game/ ├── game/ │ ├── engine/ │ │ ├── base/ # Wall class (e.g., Wall.java) │ │ ├── dataloader/ # Loads data from CSV files │ │ ├── exceptions/ # Custom game exceptions │ │ │ ├── GameActionException.java │ │ │ ├── InvalidLaneException.java │ │ │ └── InsufficientResourcesException.java │ │ ├── interfaces/ # Interfaces (Attackee, Attacker, Mobil) │ │ ├── lanes/ # Lane management │ │ ├── titans/ # Titan hierarchy & registry │ │ ├── weapons/ # Weapon hierarchy & registry │ │ │ └── factory/ # Weapon factory and response classes │ ├── gui/ # JavaFX GUI │ └── tests/ # Unit and scenario-based tests ├── resources/ # CSV data files │ ├── titans.csv │ └── weapons.csv └── README.md # Project documentation ```</code></pre>
 ---
 
 ## ⚙️ Core OOP Design
