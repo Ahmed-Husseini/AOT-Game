@@ -25,22 +25,7 @@ Set in an alternate *Attack on Titan* universe, the game revolves around defendi
 
 ## 🗂️ Project Structure
 
-AOT-Game/
-├── game/
-│ ├── engine/
-│ │ ├── base/ # Wall class
-│ │ ├── dataloader/ # CSV readers for weapons and titans
-│ │ ├── exceptions/ # Custom game exceptions
-│ │ ├── interfaces/ # OOP interfaces: Attackee, Attacker, Mobil
-│ │ ├── lanes/ # Lane class: holds titans and weapons
-│ │ ├── titans/ # Titan class hierarchy + Titan registry
-│ │ ├── weapons/ # Weapon class hierarchy + Weapon registry
-│ │ └── weapons/factory/ # Factory & response wrapper for weapons
-│ ├── gui/ # GUI classes (TBD or under development)
-│ └── tests/ # Unit testing and test scenarios
-└── resources/
-├── titans.csv # CSV for titan stats
-└── weapons.csv # CSV for weapon stats
+<pre><code>```plaintext AOT-Game/ ├── game/ │ ├── engine/ │ │ ├── base/ # Wall class │ │ ├── dataloader/ # CSV readers for weapons and titans │ │ ├── exceptions/ # Custom game exceptions │ │ ├── interfaces/ # OOP interfaces: Attackee, Attacker, Mobil │ │ ├── lanes/ # Lane class: holds titans and weapons │ │ ├── titans/ # Titan class hierarchy + Titan registry │ │ ├── weapons/ # Weapon class hierarchy + Weapon registry │ │ └── weapons/factory/ # Factory & response wrapper for weapons │ ├── gui/ # JavaFX GUI implementation │ └── tests/ # Unit testing and test scenarios └── resources/ ├── titans.csv # CSV for titan stats └── weapons.csv # CSV for weapon stats ```</code></pre>
 
 ---
 
