@@ -46,6 +46,9 @@ AOT-Game/
 │   ├── titans.csv
 │   └── weapons.csv
 └── README.md                       # Project documentation
+```
+
+---
 
 ## ⚙️ Core OOP Design
 
